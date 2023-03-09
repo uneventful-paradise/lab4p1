@@ -14,6 +14,14 @@ int main()
 	//Sort v1(a, count_a);
 	//Sort v1(3, 1, 2, 3);
 	char c[100] = { "10,40,100,5,70" };
+	//char c[100] = {"1, 2, 3, 0"};
 	Sort v1(c);
+	v1.Print();
+	std::cout << "\n";
+	bool ascend = false;
+	//v1.BubbleSort(ascend);
+	//v1.InsertSort(ascend);
+	v1.QuickSort(ascend);
+	std::cout << "\n";
 	v1.Print();
 }
